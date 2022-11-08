@@ -1,0 +1,47 @@
+.box-menu{
+    background-color: navy;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu-bar{
+    background-color: aqua;
+    width: 150px;
+    height: 10px;
+    border-radius: 50px;
+}
+.menu-bar::after{
+    background-color: aqua;
+    width: 150px;
+    height: 10px;
+    border-radius: 50px;
+    content: '';
+    position: absolute;
+    transform: translateY(-30px);
+}
+.menu-bar::before{
+    background-color: aqua;
+    width: 150px;
+    height: 10px;
+    border-radius: 50px;
+    content: '';
+    position: absolute;
+    transform: translateY(30px);
+}
+.menu-bar--cruz{
+    transform: rotate(360deg);
+    background-color: transparent;
+    transition-duration: 1.5s;
+}
+.menu-bar--cruz::after{
+    background-color: deeppink;
+    transform: rotate(90deg) translateY(0px);
+    transition-duration: 1.5s;
+}
+.menu-bar--cruz::before{
+    background-color: deeppink;
+    transform: translateY(0px);
+    transition-duration: 1.5s;
+}
